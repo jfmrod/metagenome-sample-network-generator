@@ -1,0 +1,8 @@
+>sample1.otu
+shape=box
+color="#33FF33"
+label="sample1"
+>sample2.otu
+shape=box
+fillcolor="#3333FF"
+label="sample2"

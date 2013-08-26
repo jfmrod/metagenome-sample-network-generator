@@ -1,0 +1,39 @@
+graph G {
+size="6,3!";
+node [fontname="Arial",fontsize="32.0",width=0.5,penwidth=0];
+outputorder=edgesfirst;
+# other samples: 5
+# sample: sample3.otu otus: 11
+# sample: sample2.otu otus: 8
+# sample: sample1.otu otus: 7
+# other sample: osample1 otus: 4
+# other sample: osample2 otus: 5
+# other sample: osample3 otus: 3
+# other sample: osample4 otus: 1
+# other sample: osample5 otus: 1
+# total other samples (>=20 OTUs): 5
+n0 [fixedsize=true,fillcolor="#FF3333",shape=box,width=0.6,label="sample3.otu",style=filled,height=0.6,color="#FF3333"];
+n1 [fixedsize=true,fillcolor="#3333FF",shape=box,width=0.6,label="sample2",style=filled,height=0.6,color="#FF3333"];
+n2 [fixedsize=true,fillcolor="#FF3333",shape=box,width=0.6,label="sample1",style=filled,height=0.6,color="#33FF33"];
+n3 [fixedsize=true,penwidth=0,fillcolor="#FF9999",shape=circle,width=0.4,label="",style=filled,height=0.4,color="#000000"];
+n4 [fixedsize=true,penwidth=0,fillcolor="#FF9999",shape=circle,width=0.4,label="",style=filled,height=0.4,color="#000000"];
+n5 [fixedsize=true,penwidth=0,fillcolor="#FF9999",shape=circle,width=0.4,label="",style=filled,height=0.4,color="#000000"];
+n6 [fixedsize=true,penwidth=0,fillcolor="#FF9999",shape=circle,width=0.4,label="",style=filled,height=0.4,color="#000000"];
+n7 [fixedsize=true,penwidth=0,fillcolor="#FF9999",shape=circle,width=0.4,label="",style=filled,height=0.4,color="#000000"];
+n0 -- n3 [len=4.075000,weight=2.500000,penwidth=3.562500,color="#0000004e"];
+n0 -- n4 [len=4.060000,weight=2.000000,penwidth=3.750000,color="#00000052"];
+n0 -- n5 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n0 -- n6 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n0 -- n7 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n1 -- n3 [len=4.075000,weight=2.500000,penwidth=3.562500,color="#0000004e"];
+n1 -- n4 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n1 -- n5 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n2 -- n3 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n2 -- n4 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n2 -- n5 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n2 -- n6 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n2 -- n7 [len=4.000000,weight=0.000000,penwidth=4.500000,color="#00000066"];
+n1 -- n0 [len=3.125000,weight=2.500000,penwidth=4.000000,color="#00FF00f2"];
+n2 -- n0 [len=3.142857,weight=2.857143,penwidth=3.928571,color="#00FF00f0"];
+n2 -- n1 [len=3.142857,weight=2.857143,penwidth=3.928571,color="#00FF00f0"];
+}

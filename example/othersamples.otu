@@ -1,0 +1,30 @@
+>OTU1
+seq1.1	osample1
+seq2.1	osample2
+seq3.1	osample3
+>OTU2
+seq1.2	osample1
+seq1.3	osample1
+seq2.2	osample2
+seq2.3	osample2
+>OTU3
+seq2.4	osample2
+seq2.5	osample2
+seq2.2	osample3
+seq2.3	osample3
+seq2.4	osample3
+>OTU4
+seq1.4	osample1
+seq1.5	osample1
+seq1.6	osample1
+seq2.5	osample2
+seq2.6	osample2
+seq2.7	osample2
+seq2.8	osample2
+>OTU5
+seq2.9	osample2
+seq3.2	osample3
+>OTU6
+seq1.7	osample1
+seq4.1	osample4
+seq5.1	osample5
