@@ -23,20 +23,23 @@ CORE SAMPLE FILE
 The set of OTUs observed in each sample should be provided on a single file per sample, and as one sequence and OTU per line.
 The format of a single line should be:
 
+<pre>
 SEQID <TAB> OTUID  
+</pre>
 
 This should be prepared previously from the sequence read data, the first column should represent the sequence read ID followed
 by a tab character and the assigned OTU. The OTU id can be anything from a numerical id to the inferred taxonomy of the sequence.
 
 For example, the contents of the example/sample1.otu file are:
 
+<pre>
 seq1    OTU1  
 seq2    OTU2  
 seq3    OTU2  
 seq4    OTU1  
 seq5    OTU3  
 ...  
-
+</pre>
 
 REFERENCE SAMPLES FILE
 =======================
@@ -84,6 +87,7 @@ Please consult the graphviz documentation for the relevant information.
 
 The file format of the attributes file is:
 
+<pre>
 >SAMPLEID  
 property=value  
 property=value  
@@ -92,11 +96,13 @@ property=value
 property=value  
 property=value  
 property=value  
+</pre>
 
 Where SAMPLEID is the filename of the sample provided to neato if it is a core sample, or, in the case of a reference sample, it is simply the
 SAMPLEID provided in the file.
 
 For example, the contents of the example/samples.attr file are:
+<pre>
 >sample1.otu  
 shape=box  
 color="#33FF33"  
@@ -105,6 +111,7 @@ label="sample1"
 shape=box  
 fillcolor="#3333FF"  
 label="sample2"  
+</pre>
 
 These properties are set for each sample and passed along to neato when the script generates the .dot file.
 
@@ -113,7 +120,7 @@ USAGE
 =======================
 
 syntax:  
-  make-sample-network.sh [-a samples.attrs] [-r refsamples.otu] <sample1.otu> [sample2.otu] [...]  
+    make-sample-network.sh [-a samples.attrs] [-r refsamples.otu] <sample1.otu> [sample2.otu] [...]  
 
 The core samples can be provided as filenames after the command "make-sample-network.sh".
 Optionally, the reference samples file can be provided using the "-r" argument.
@@ -124,11 +131,12 @@ EXAMPLE
 =======================
 
 To produce the example network file one should run the following commands:
-./make-sample-network.sh -a example/samples.attr -r example/refsamples.otu example/sample*.otu > example/network.dot  
+
+    ./make-sample-network.sh -a example/samples.attr -r example/refsamples.otu example/sample*.otu > example/network.dot  
 
 This generates the .dot file that can then be used with neato to generate a pdf file, using the command:
 
-neato -Tpdf -O example/network.dot  
+    neato -Tpdf -O example/network.dot  
 
 The generated network can then be found in the file example/network.dot.pdf
 
