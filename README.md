@@ -29,6 +29,7 @@ This should be prepared previously from the sequence read data, the first column
 by a tab character and the assigned OTU. The OTU id can be anything from a numerical id to the inferred taxonomy of the sequence.
 
 For example, the contents of the example/sample1.otu file are:
+
 seq1    OTU1  
 seq2    OTU2  
 seq3    OTU2  
@@ -43,6 +44,7 @@ REFERENCE SAMPLES FILE
 The set of reference samples should be provided in the following format. Where lines indicating the start of a new OTU begin with the '>'
 character. And every line that does not begin with the '>' character indicates the sequence ID and the sample it belongs too.
 
+<pre>
 >OTUID  
 SEQID <TAB> SAMPLEID  
 SEQID <TAB> SAMPLEID  
@@ -51,8 +53,10 @@ SEQID <TAB> SAMPLEID
 SEQID <TAB> SAMPLEID  
 SEQID <TAB> SAMPLEID  
 SEQID <TAB> SAMPLEID  
+</pre>
 
 For example, the contents of the example/refsamples.otu file are:
+<pre>
 >OTU1  
 seq1.1	osample1  
 seq2.1	osample2  
@@ -63,6 +67,7 @@ seq1.3	osample1
 seq2.2	osample2  
 seq2.3	osample2  
 ...  
+</pre>
 
 It is important that the OTU IDs used in the reference file are the same as the ones used in the classification of the (core) sample files.
 
