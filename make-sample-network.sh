@@ -3,9 +3,9 @@
 OTHERSAMPLES=""
 SAMPLESATTR=""
 
-while getopts "o:a:h" OPT; do
+while getopts "r:a:h" OPT; do
   case $OPT in
-    o) OTHERSAMPLES=$OPTARG ;;
+    r) OTHERSAMPLES=$OPTARG ;;
     a) SAMPLESATTR=$OPTARG ;;
     h) cat <<EOF
 make-sample-network.sh v1.0
@@ -29,7 +29,7 @@ Script to generate a network of metagenomic samples
 Network is produced in dot file format to be visualized with neato (graphviz)
 
 syntax:
-  make-sample-network.sh [-a samples.attrs] [-o othersamples.otu] <sample1.otu> [sample2.otu] [...]
+  make-sample-network.sh [-a samples.attrs] [-r refsamples.otu] <sample1.otu> [sample2.otu] [...]
 
 help:
   make-sample-network.sh -h
