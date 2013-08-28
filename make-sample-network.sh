@@ -13,6 +13,21 @@ make-sample-network.sh v1.0
 Script to generate a network of metagenomic samples
 Network is produced in dot file format to be visualized with neato (graphviz)
 
+syntax:
+  make-sample-network.sh [-a samples.attrs] [-r refsamples.otu] <sample1.otu> [sample2.otu] [...]
+
+input:
+  sample1.otu, sample2.otu, ...     Core sample files with a description of OTUs in each sample
+
+options:
+  -a     Customized sample attributes file
+  -r     Reference samples OTU description file
+
+
+help:
+  make-sample-network.sh -h
+
+Please consult the accompanying README.md file for a description of file formats and an example usage.
 EOF
 exit -1
 ;;
@@ -33,6 +48,8 @@ syntax:
 
 help:
   make-sample-network.sh -h
+
+Please consult the accompanying README.md file for a description of file formats and an example usage.
 EOF
   exit -1
 fi
@@ -44,7 +61,7 @@ awk '
 BEGIN{
   othercutoff=0.20;
   othercutoff2=0.10;
-  samplecutoff=0.25;
+  samplecutoff=0.20;
 
   FS="\t";
   f="'$OTHERSAMPLES'";
